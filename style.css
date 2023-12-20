@@ -1,0 +1,66 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    
+}
+.content div{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 100vh;
+}
+.information div{
+    border: 1px solid red;
+}
+
+.basic{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-width: fit-content;
+    height: 57%;
+}
+.basic div{
+    position: relative;
+    border: 1px solid blue;
+}
+
+.picture{
+    width: 30%;
+}
+.description{
+    width: 70%;
+}
+
+.extra{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-width: fit-content;
+    height: 43%;
+}
+.extra div{
+    position: relative;
+    border: 1px solid green;
+}
+
+.achievements{
+    width: 30%;
+}
+
+.quote{
+    width: 50%;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    /* padding: 20%; */
+}
+.books {
+    width: 20%;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
