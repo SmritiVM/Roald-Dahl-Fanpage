@@ -1,10 +1,33 @@
+@font-face { font-family: "Roald Dahl"; src: url('RoaldDahlWonkyBold.ttf'); } 
+body{
+    background-image: url('./assets/background.jpg');  
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* linear-gradient(135deg, rgba(243,139,160,0.65), rgba(246,174,153,0.65), rgba(241,202,137,0.65), rgba(213,236,194,0.65), rgba(189,210,182,0.65), rgba(135,167,179,0.65), rgba(228,186,212,0.65)); */
+    /* url('./assets/roald-dahl.jpeg'); */
+   
+    /* background-image: linear-gradient(45deg, rgb(108, 108, 249), rgb(166, 84, 237)); */
+    /* background-color: black; */
+    /* linear-gradient(135deg, rgba(243,139,160,0.65), rgba(246,174,153,0.65), rgba(241,202,137,0.65), rgba(213,236,194,0.65), rgba(189,210,182,0.65), rgba(135,167,179,0.65), rgba(228,186,212,0.65)); */
+    overscroll-behavior: none;
+    
+}
+.heading{
+    font-family: "Roald Dahl";
+    font-size: 30px;
+}
+
 .content{
+    margin: 1%;
+    border-radius: 5%;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     display: flex;
     flex-direction: row;
     
 }
 .content div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 10px;
 }
 
@@ -14,27 +37,57 @@
     width: 80%;
     min-height: 100vh;
 }
-.information div{
+/* .information div{
     border: 1px solid red;
-}
+} */
 
 .basic{
     position: relative;
     display: flex;
     flex-direction: row;
-    min-width: fit-content;
-    height: 57%;
+    /* min-width: fit-content; */
+    height: 45%;
 }
 .basic div{
     position: relative;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .picture{
-    width: 30%;
+    width: 20%;
+    overflow: hidden;
+    border-radius: 5%;
+    max-height: 85%;
+    margin-left: 5% !important;
+    margin-right: 10% !important;
+    scale: 1.1;
+}
+.logo{
+    width: 100%;
+    filter: saturate(180%);
+    opacity: 0.9;
+}
+.portrait{
+    height: 85%;
+    width: 100%;
+    /* object-position: -60px -30px; */
+    /* margin-left: 10%; */
+    filter: saturate(140%);
+    opacity: 0.9;
+    border-radius: 10%;
 }
 .description{
     width: 70%;
+    margin-left: 10%;
+    max-height: 85%;
+    padding: 10px;
+    /* background-color: rgba(248, 248, 248, 0.804); */
+    background-color: rgba(196, 224, 239, 0.929);
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10%;
+    font-family: "Ubuntu Mono";
+    font-size: medium;
 }
 
 .extra{
@@ -42,25 +95,122 @@
     display: flex;
     flex-direction: row;
     min-width: fit-content;
-    height: 43%;
+    height: 65%;
 }
 .extra div{
     position: relative;
-    border: 1px solid green;
+    /* border: 1px solid green; */
+}
+
+.bio{
+    width: 30%;
+}
+.quote{
+    background-color: rgba(244, 161, 161, 0.655);
+    padding: 10px;
+    border-radius: 5%;
+    margin-left: 0px !important;
+    width: 100%;
+}
+.quote q{
+    font-family: "Shadows Into Light";
+    font-weight: bolder;
+}
+.bio table{
+    /* border-collapse: collapse; */
+    font-family: "Ubuntu Mono";
+    opacity: 0.9;   
+    /* width: 90% !important; */
+}
+.bio table th{
+    background-color: rgb(242, 242, 113);
+    color: #393838;
+    padding: 10px;
+}
+.bio table td{
+    background-color: rgb(171, 207, 98);
+    color: #0f5237;
+    padding: 10px;
 }
 
 .achievements{
-    width: 30%;
+    width: 70%;
+    margin-left: 5% !important;
+    /* margin-right: 10% !important; */
+    max-height: 250px;
+    overflow-y: scroll;
+    opacity: 0.95;
+}
+.achievements table{
+    border-collapse: collapse;
+    font-family: "Nova Mono";    
+}
+.achievements table td{
+	padding: 8px;
+}
+.achievements table thead th {
+    background-color: rgb(44, 32, 92);
+    padding: 8px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 16px;
+    border: 1px solid rgb(44, 32, 92);
+}
+.achievements table tbody td {
+	color: #393838;
+	border: 1px solid #dddfe1;
+    font-size: 14px;
+}
+.achievements table tbody tr {
+	background-color: #80b5ea;
+}
+.achievements table tbody tr:nth-child(odd) {
+	background-color: #c0d5ef;
 }
 
-.quote{
-    width: 50%;
-    margin-left: 10% !important;
-    margin-right: 10% !important;
-    /* padding: 20%; */
-}
+
+/* Books */
 .books {
     width: 20%;
     max-height: 100vh;
     overflow-y: scroll;
 }
+.book-heading{
+    width: 50%;
+    margin-left: 20%;
+    background-color: white;
+    color: rgb(255, 85, 0);
+    padding: 5px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: "Rubik Doodle Shadow";
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.books img{
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(184, 182, 182, 0.628);
+    border-radius: 10px;
+  }
