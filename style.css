@@ -1,16 +1,11 @@
 @font-face { font-family: "Roald Dahl"; src: url('RoaldDahlWonkyBold.ttf'); } 
 body{
-    /* background-image: url("./assets/banner.png"); */
-    /* background-image:  */
     /* linear-gradient(180deg, rgba(243,139,160,0.4), rgba(246,174,153,0.4), rgba(241,202,137,0.4), rgba(213,236,194,0.4), rgba(189,210,182,0.4), rgba(135,167,179,0.4), rgba(228,186,212,0.4)),  */
-    /* url('./assets/background.jpg');  */
-    /* background-size: 500px;
-    background-repeat: no-repeat; */
     overscroll-behavior: none;
-    background-color: #77B9EB;
-    /* background-position: 0px -100px; */
-    
+    background-color: #77B9EB;   
 }
+
+/* Heading */
 .heading{
     background-image: url("./assets/banner.png");
     background-size: 300px;
@@ -23,43 +18,36 @@ body{
 .heading h1, a{
     font-family: "Roald Dahl";
     font-size: 70px; 
-    /* padding-top: 0.3% !important; */
     margin-top: 3% !important;
     margin-bottom: 1% !important;
     color: black;
     text-decoration: none;
 }
 
-
+/* Content */
 .content{
-    background-image: 
-    /* linear-gradient(180deg, rgba(243,139,160,0.2), rgba(246,174,153,0.2), rgba(241,202,137,0.2), rgba(213,236,194,0.2), rgba(189,210,182,0.2), rgba(135,167,179,0.2), rgba(228,186,212,0.2)),  */
-    url('./assets/background_copy.jpg'); 
+    background-image: url('./assets/combined_illustration.jpg'); 
     background-repeat: no-repeat;
-    /* background-position: 0px 30px; */
     margin: 1%;
     border-radius: 5%;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px; */
     background-color: white;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;   
 }
+
 .content div{
-    /* border: 1px solid black; */
     margin: 10px;
 }
 
+/* Information */
 .information {
     display: flex;
     flex-direction: column;
     width: 80%;
     min-height: 100vh;
 }
-/* .information div{
-    border: 1px solid red;
-} */
 
+/* Basic */
 .basic{
     position: relative;
     display: flex;
@@ -69,7 +57,6 @@ body{
 }
 .basic div{
     position: relative;
-    /* border: 1px solid blue; */
 }
 
 .picture{
@@ -89,8 +76,6 @@ body{
 .portrait{
     height: 85%;
     width: 100%;
-    /* object-position: -60px -30px; */
-    /* margin-left: 10%; */
     filter: saturate(140%);
     opacity: 0.95;
     border-radius: 10%;
@@ -109,6 +94,7 @@ body{
     font-size: medium;
 }
 
+/* Extra */
 .extra{
     position: relative;
     display: flex;
@@ -118,7 +104,6 @@ body{
 }
 .extra div{
     position: relative;
-    /* border: 1px solid green; */
 }
 
 .bio{
@@ -135,13 +120,11 @@ body{
     font-family: "Shadows Into Light";
     font-weight: bolder;
 }
+
+/* Bio Table */
 .bio table{
-    /* border-collapse: collapse; */
     font-family: "Ubuntu Mono";
-    /* font-family: "Roald Dahl"; */
-    /* font-size: 12px; */
     opacity: 0.9;   
-    /* width: 90% !important; */
 }
 .bio table th{
     background-color: rgb(242, 242, 113);
@@ -154,10 +137,10 @@ body{
     padding: 10px;
 }
 
+/* Achievements table */
 .achievements{
     width: 70%;
     margin-left: 5% !important;
-    /* margin-right: 10% !important; */
     max-height: 320px;
     overflow-y: scroll;
     opacity: 0.95;
