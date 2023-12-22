@@ -1,27 +1,46 @@
 @font-face { font-family: "Roald Dahl"; src: url('RoaldDahlWonkyBold.ttf'); } 
 body{
-    background-image: url('./assets/background.jpg');  
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* linear-gradient(135deg, rgba(243,139,160,0.65), rgba(246,174,153,0.65), rgba(241,202,137,0.65), rgba(213,236,194,0.65), rgba(189,210,182,0.65), rgba(135,167,179,0.65), rgba(228,186,212,0.65)); */
-    /* url('./assets/roald-dahl.jpeg'); */
-   
-    /* background-image: linear-gradient(45deg, rgb(108, 108, 249), rgb(166, 84, 237)); */
-    /* background-color: black; */
-    /* linear-gradient(135deg, rgba(243,139,160,0.65), rgba(246,174,153,0.65), rgba(241,202,137,0.65), rgba(213,236,194,0.65), rgba(189,210,182,0.65), rgba(135,167,179,0.65), rgba(228,186,212,0.65)); */
+    /* background-image: url("./assets/banner.png"); */
+    /* background-image:  */
+    /* linear-gradient(180deg, rgba(243,139,160,0.4), rgba(246,174,153,0.4), rgba(241,202,137,0.4), rgba(213,236,194,0.4), rgba(189,210,182,0.4), rgba(135,167,179,0.4), rgba(228,186,212,0.4)),  */
+    /* url('./assets/background.jpg');  */
+    /* background-size: 500px;
+    background-repeat: no-repeat; */
     overscroll-behavior: none;
+    background-color: #77B9EB;
+    /* background-position: 0px -100px; */
     
 }
 .heading{
-    font-family: "Roald Dahl";
-    font-size: 30px;
+    background-image: url("./assets/banner.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 150px -30px;
+    background-color: #77B9EB;
+    margin-bottom: 0 !important;  
 }
 
+.heading h1, a{
+    font-family: "Roald Dahl";
+    font-size: 70px; 
+    /* padding-top: 0.3% !important; */
+    margin-top: 3% !important;
+    margin-bottom: 1% !important;
+    color: black;
+    text-decoration: none;
+}
+
+
 .content{
+    background-image: 
+    /* linear-gradient(180deg, rgba(243,139,160,0.2), rgba(246,174,153,0.2), rgba(241,202,137,0.2), rgba(213,236,194,0.2), rgba(189,210,182,0.2), rgba(135,167,179,0.2), rgba(228,186,212,0.2)),  */
+    url('./assets/background_copy.jpg'); 
+    background-repeat: no-repeat;
+    /* background-position: 0px 30px; */
     margin: 1%;
     border-radius: 5%;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px; */
+    background-color: white;
     display: flex;
     flex-direction: row;
     
@@ -60,7 +79,7 @@ body{
     max-height: 85%;
     margin-left: 5% !important;
     margin-right: 10% !important;
-    scale: 1.1;
+    scale: 1.15;
 }
 .logo{
     width: 100%;
@@ -73,7 +92,7 @@ body{
     /* object-position: -60px -30px; */
     /* margin-left: 10%; */
     filter: saturate(140%);
-    opacity: 0.9;
+    opacity: 0.95;
     border-radius: 10%;
 }
 .description{
@@ -107,18 +126,20 @@ body{
 }
 .quote{
     background-color: rgba(244, 161, 161, 0.655);
-    padding: 10px;
+    padding: 8px;
     border-radius: 5%;
     margin-left: 0px !important;
     width: 100%;
 }
-.quote q{
+.quote p{
     font-family: "Shadows Into Light";
     font-weight: bolder;
 }
 .bio table{
     /* border-collapse: collapse; */
     font-family: "Ubuntu Mono";
+    /* font-family: "Roald Dahl"; */
+    /* font-size: 12px; */
     opacity: 0.9;   
     /* width: 90% !important; */
 }
@@ -137,7 +158,7 @@ body{
     width: 70%;
     margin-left: 5% !important;
     /* margin-right: 10% !important; */
-    max-height: 250px;
+    max-height: 320px;
     overflow-y: scroll;
     opacity: 0.95;
 }
@@ -172,25 +193,29 @@ body{
 /* Books */
 .books {
     width: 20%;
-    max-height: 100vh;
-    overflow-y: scroll;
 }
+
 .book-heading{
     width: 50%;
-    margin-left: 20%;
+    margin-left: 15%;
     background-color: white;
     color: rgb(255, 85, 0);
     padding: 5px;
     text-align: center;
     border-radius: 50px;
-    font-family: "Rubik Doodle Shadow";
+    font-family: "Roald Dahl";
     font-weight: bolder;
     font-size: 13px;
 }
 
-.books img{
+.book-covers{
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+.book-covers img{
     width: 50%;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 2%;
     margin-bottom: 2%;
 
@@ -200,17 +225,17 @@ body{
 /* Custom Scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
+    /* box-shadow: inset 0 0 5px grey; */
     border-radius: 10px;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(184, 182, 182, 0.628);
+    /* background: rgba(184, 182, 182, 0.628); */
     border-radius: 10px;
   }
